@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinPeak Advisors - Financial Excellence</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #3b82f6;
+            --accent: #10b981;
+            --dark: #111827;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.7; color: #374151; }
+        
+        header { 
+            background: rgba(30,58,138,0.95); 
+            backdrop-filter: blur(20px); 
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            z-index: 1000; 
+            padding: 1rem 0; 
+        }
+        nav { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: 800; color: white; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: all 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        .hero { 
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%231e3a8a" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; 
+        }
+        .hero h1 { font-size: 4rem; font-weight: 800; margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.3rem; max-width: 600px; margin: 0 auto 2rem; }
+        .btn { background: var(--accent); color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; display: inline-block; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 15px 30px rgba(16,185,129,0.4); }
+
+        section { padding: 6rem 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        h2 { text-align: center; font-size: 3rem; font-weight: 800; margin-bottom: 4rem; color: var(--dark); }
+        
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .feature { text-align: center; padding: 3rem 2rem; background: white; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .feature:hover { transform: translateY(-10px); box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
+        .feature i { font-size: 4rem; color: var(--secondary); margin-bottom: 1.5rem; }
+        .feature h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--dark); }
+
+        .testimonials { background: #f8fafc; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .testimonial { background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; }
+        .stars { color: #fbbf24; margin-bottom: 1rem; }
+        .client-img { width: 50px; height: 50px; border-radius: 50%; margin: 1.5rem auto 0; background: var(--secondary); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; }
+
+        footer { background: var(--dark); color: white; text-align: center; padding: 4rem 0 1rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } h2 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FinPeak</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Financial Excellence, Redefined</h1>
+            <p>Trusted by 500+ businesses worldwide. We deliver strategic financial solutions that drive sustainable growth and maximize returns.</p>
+            <a href="#contact" class="btn">Start Your Journey</a>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <h2>Our Core Services</h2>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <h3>Investment Strategy</h3>
+                <p>Customized portfolio management with data-driven insights and risk-optimized strategies.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Risk Management</h3>
+                <p>Comprehensive risk assessment and mitigation strategies to protect your financial future.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-handshake"></i>
+                <h3>Consulting</h3>
+                <p>Expert financial advisory services for mergers, acquisitions, and corporate finance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"FinPeak transformed our financial strategy. ROI increased by 47% in first year!"</p>
+                    <div class="client-img">JD</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Professional team with deep market knowledge. Highly recommended!"</p>
+                    <div class="client-img">SM</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best decision we made. Their expertise saved us millions."</p>
+                    <div class="client-img">LC</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>FinPeak Advisors</h3>
+            <p>© 2024 FinPeak Advisors. All rights reserved. | Licensed & Regulated</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
